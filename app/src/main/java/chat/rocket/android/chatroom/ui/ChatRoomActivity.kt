@@ -11,7 +11,6 @@ import chat.rocket.android.R
 import chat.rocket.android.chatroom.presentation.ChatRoomNavigator
 import chat.rocket.android.server.domain.GetCurrentServerInteractor
 import chat.rocket.android.server.infrastructure.ConnectionManagerFactory
-import chat.rocket.android.thememanager.BaseActivity
 import chat.rocket.android.util.extensions.addFragment
 import chat.rocket.android.util.extensions.textContent
 import dagger.android.AndroidInjection
@@ -53,7 +52,7 @@ private const val INTENT_CHAT_ROOM_LAST_SEEN = "chat_room_last_seen"
 private const val INTENT_CHAT_IS_SUBSCRIBED = "is_chat_room_subscribed"
 private const val INTENT_CHAT_ROOM_MESSAGE = "chat_room_message"
 
-class ChatRoomActivity : BaseActivity(), HasSupportFragmentInjector {
+class ChatRoomActivity : AppCompatActivity(), HasSupportFragmentInjector {
     @Inject
     lateinit var fragmentDispatchingAndroidInjector: DispatchingAndroidInjector<Fragment>
     // TODO - workaround for now... We will move to a single activity

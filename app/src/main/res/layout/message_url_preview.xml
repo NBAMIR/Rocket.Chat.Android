@@ -5,10 +5,9 @@
     android:id="@+id/url_preview_layout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="?android:colorBackground"
+    android:background="?android:attr/selectableItemBackground"
     android:paddingStart="72dp"
     android:paddingEnd="24dp">
-    <!--android:background="?android:attr/selectableItemBackground"-->
 
     <com.facebook.drawee.view.SimpleDraweeView
         android:id="@+id/image_preview"
@@ -34,7 +33,7 @@
         android:id="@+id/text_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textColor="?colorAccent"
+        android:textColor="@color/colorAccent"
         android:textDirection="locale"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/text_host"
@@ -43,7 +42,6 @@
 
     <TextView
         android:id="@+id/text_description"
-        android:textColor="@color/colorSecondaryText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textDirection="locale"

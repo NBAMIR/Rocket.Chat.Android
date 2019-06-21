@@ -11,7 +11,6 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.core.net.toUri
 import chat.rocket.android.R
-import chat.rocket.android.thememanager.BaseActivity
 import chat.rocket.android.util.extensions.decodeUrl
 import chat.rocket.android.util.extensions.toJsonObject
 import kotlinx.android.synthetic.main.activity_web_view.*
@@ -33,7 +32,7 @@ const val INTENT_OAUTH_CREDENTIAL_TOKEN = "credential_token"
 const val INTENT_OAUTH_CREDENTIAL_SECRET = "credential_secret"
 
 // Shows a WebView to the user authenticate with its OAuth credential.
-class OauthWebViewActivity : BaseActivity() {
+class OauthWebViewActivity : AppCompatActivity() {
     private lateinit var webPageUrl: String
     private lateinit var state: String
     private var isWebViewSetUp: Boolean = false

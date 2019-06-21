@@ -57,10 +57,7 @@ class MessageViewHolder(
             button_join_video_call.setOnClickListener { joinVideoCallListener(it) }
 
             image_avatar.setImageURI(data.avatar)
-            if (data.isTemporary){
-                text_content.setTextColor(Color.GRAY)
-            }
-//            text_content.setTextColor(if (data.isTemporary) Color.GRAY else Color.BLACK)
+            text_content.setTextColor(if (data.isTemporary) Color.GRAY else Color.BLACK)
 
             data.message.let {
                 text_edit_indicator.isVisible = !it.isSystemMessage() && it.editedBy != null

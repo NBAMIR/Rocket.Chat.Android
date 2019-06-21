@@ -8,7 +8,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import chat.rocket.android.R
-import chat.rocket.android.thememanager.BaseActivity
 import kotlinx.android.synthetic.main.activity_web_view.*
 import kotlinx.android.synthetic.main.app_bar.*
 
@@ -23,7 +22,7 @@ private const val INTENT_WEB_PAGE_URL = "web_page_url"
 private const val TOOLBAR_TITLE = "toolbar_title"
 
 // Simple WebView to load URL.
-class WebViewActivity : BaseActivity() {
+class WebViewActivity : AppCompatActivity() {
     private lateinit var webPageUrl: String
     private var toolbarTitle: String? = ""
 

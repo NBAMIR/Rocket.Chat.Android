@@ -11,7 +11,6 @@ import android.webkit.CookieManager
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import chat.rocket.android.R
-import chat.rocket.android.thememanager.BaseActivity
 import kotlinx.android.synthetic.main.activity_web_view.*
 import kotlinx.android.synthetic.main.app_bar.*
 
@@ -28,7 +27,7 @@ const val INTENT_SSO_TOKEN = "cas_token"
 /**
  * This class is responsible to handle the authentication thought single sign-on protocol (CAS and SAML).
  */
-class SsoWebViewActivity : BaseActivity() {
+class SsoWebViewActivity : AppCompatActivity() {
     private lateinit var webPageUrl: String
     private lateinit var casToken: String
     private var isWebViewSetUp: Boolean = false

@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:focusableInTouchMode="true"
-    android:background="?android:colorBackground"
     tools:context=".profile.ui.ProfileFragment">
 
     <include
@@ -94,14 +93,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        app:indicatorColor="?colorLoading"
+        app:indicatorColor="@color/colorBlack"
         app:indicatorName="BallPulseIndicator" />
 
     <View
         android:id="@+id/view_dim"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="?attr/colorDim"
+        android:background="@color/colorDim"
         android:visibility="gone" />
 
     <include
