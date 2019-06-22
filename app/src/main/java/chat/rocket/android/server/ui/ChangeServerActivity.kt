@@ -7,7 +7,6 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import chat.rocket.android.server.presentation.ChangeServerPresenter
 import chat.rocket.android.server.presentation.ChangeServerView
-import chat.rocket.android.thememanager.BaseActivity
 import chat.rocket.android.util.extensions.showToast
 import dagger.android.AndroidInjection
 import javax.inject.Inject
@@ -25,7 +24,7 @@ fun Context.changeServerIntent(serverUrl: String? = null, chatRoomId: String? = 
     }
 }
 
-class ChangeServerActivity : BaseActivity(), ChangeServerView {
+class ChangeServerActivity : AppCompatActivity(), ChangeServerView {
     @Inject lateinit var presenter: ChangeServerPresenter
     var progress: ProgressDialog? = null
 

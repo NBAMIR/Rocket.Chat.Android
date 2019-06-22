@@ -15,7 +15,6 @@
     <string name="title_settings">Parametri</string>
     <string name="title_preferences">Preferenze</string>
     <string name="title_change_password">Cambiare Password</string>
-    <string name="title_change_theme">Change Theme</string> <!-- TODO Translate -->
     <string name="title_rate_us">Valutaci</string>
     <string name="title_admin_panel">Pannello di Amministrazione</string>
     <string name="title_password">Password</string>
@@ -63,9 +62,6 @@
 
     <!-- Settings messages -->
     <string name="msg_contact_us">Contact us</string> <!-- TODO Translate -->
-    //--------------------------------------------------------------------------------------------
-    <string name="msg_change_theme">Change Theme</string> <!-- TODO Translate -->
-    //--------------------------------------------------------------------------------------------
     <string name="msg_language">Language</string> <!-- TODO Translate -->
     <string name="msg_review_this_app">Review this app</string> <!-- TODO Translate -->
     <string name="msg_share_this_app">Share this app</string> <!-- TODO Translate -->
