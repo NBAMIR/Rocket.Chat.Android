@@ -15,6 +15,7 @@
     <string name="title_settings">设置</string>
     <string name="title_preferences">首选项</string>
     <string name="title_change_password">修改密码</string>
+    <string name="title_change_theme">Change Theme</string> <!-- TODO Translate -->
     <string name="title_rate_us">给我们打分</string>
     <string name="title_admin_panel">管理面板</string>
     <string name="title_password">修改密码</string>
@@ -62,6 +63,9 @@
 
     <!-- Settings messages -->
     <string name="msg_contact_us">Contact us</string> <!-- TODO Translate -->
+    //--------------------------------------------------------------------------------------------
+    <string name="msg_change_theme">Change Theme</string> <!-- TODO Translate -->
+    //--------------------------------------------------------------------------------------------
     <string name="msg_language">Language</string> <!-- TODO Translate -->
     <string name="msg_review_this_app">Review this app</string> <!-- TODO Translate -->
     <string name="msg_share_this_app">Share this app</string> <!-- TODO Translate -->
