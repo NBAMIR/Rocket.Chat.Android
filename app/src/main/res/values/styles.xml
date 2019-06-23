@@ -359,4 +359,9 @@
         <item name="android:background">@android:color/transparent</item>
         <item name="android:theme">@style/AppTheme</item>
     </style>
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
 </resources>
