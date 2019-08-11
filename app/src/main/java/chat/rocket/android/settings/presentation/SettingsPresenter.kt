@@ -145,6 +145,7 @@ class SettingsPresenter @Inject constructor(
         tokenRepository.get(currentServer)?.let {
             navigator.toAdminPanel(currentServer.adminPanelUrl(), it.authToken)
         }
+    fun toChangeTheme() = navigator.toChangeTheme()
     }
 
     fun toLicense(licenseUrl: String, licenseTitle: String) =
